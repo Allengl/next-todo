@@ -40,7 +40,7 @@ const Task: FC<TaskProps> = ({ task }) => {
         <FileEdit onClick={() => setOpenModalEdit(true)} cursor="pointer" className="text-blue-500" size={25} />
         <Modal modalOpen={openModalEdit} setModalOpen={setOpenModalEdit}>
           <form onSubmit={handleSubmitEditTodo}>
-            <h3 className='font-bold text-lg'>Add new task</h3>
+            <h3 className='font-bold text-lg'>Edit task</h3>
             <div className='modal-action'>
               <input
                 value={taskToEdit}
